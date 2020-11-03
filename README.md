@@ -4,5 +4,9 @@ Welcome to the Data Sturcture and Algoritham . Here is a java implementation of 
 
 ### Algorithams
 #### Sorting Algorithams
+Insertion Sort
+Selection Sort
+Bubble Sort
+Merge Sort
 
 ### Data Structures
