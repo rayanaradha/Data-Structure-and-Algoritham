@@ -1,8 +1,8 @@
-## Data Sturcture And Algorithams
+## Data Structures and Algorithms
 
-Welcome to the Data Sturcture and Algoritham . Here is a java implementation of well known algoritham and Data Structure.
+Welcome to the Data Structures and Algorithms . Here is a java implementation of well known algorithms and Data Structure.
 
-### Algorithams
+### Algorithms
 #### Sorting Algorithams
 ###### Insertion Sort
 ###### Selection Sort
@@ -10,3 +10,4 @@ Welcome to the Data Sturcture and Algoritham . Here is a java implementation of 
 ###### Merge Sort
 
 ### Data Structures
+###### Binary Tree
