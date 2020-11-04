@@ -15,7 +15,7 @@ class Node
 }
 
 // add Element Into Binary Tree
-public class BinaryTree
+public class BinarySearchTree
 { 
     static Node root;
 
@@ -56,7 +56,7 @@ public class BinaryTree
     return value < current.value
       ? containsNodeRecursive(current.left, value)
       : containsNodeRecursive(current.right, value);
-}
+    }
 
     //Delete particuler element
     public static void delete(int value) {
@@ -102,10 +102,37 @@ public class BinaryTree
         return current;
     }
 
+    //smallest value of tree
     public static int findSmallestValue(Node root) {
         return root.left == null ? root.value : findSmallestValue(root.left);
     }
 
+    //highest value of tree
+    public static int findHighestValue(Node root) {
+        return root.right == null ? root.value : findHighestValue(root.right);
+    }
+
+    //node count on tree
+    public static int nodeCount(Node root){
+        if(root==null){
+            return 0;
+        }
+        else{
+            return (nodeCount(root.left)+nodeCount(root.right)+1);
+        }
+    }
+
+
+    //height of tree
+    public static int height(Node root) {
+        if(root ==null){
+            return -1;
+        }
+        
+        return (Math.max (height(root.left),height(root.right))+1);
+      }
+
+    //depth first serach
     public static void inorder(Node node){
         if(node != null){
             inorder(node.left);
@@ -130,9 +157,30 @@ public class BinaryTree
         }
     }
 
+    //Breadth-First Search
+    public static void PrintLevelOrder(Node node){
+        int height = height(node);
+        for(int i=0; i< height+1 ;i++){
+            LevelOrder(node,i);
+        }    
+    }
+
+    public static void LevelOrder(Node node, int i){
+        if(i==0){
+            System.out.print(node.value+" ");
+        }
+        if(node.left!=null){
+            LevelOrder(node.left,i-1);
+        }
+        if(node.right!=null){
+            LevelOrder(node.right,i-1);
+        }
+
+    }
+
 
     public static void main(String[] args) {
-        BinaryTree bt = new BinaryTree(); 
+        BinarySearchTree bt = new BinarySearchTree(); 
         bt.add(6);
         bt.add(4);
         bt.add(8);
@@ -143,16 +191,24 @@ public class BinaryTree
         bt.add(9);
 
         print2D(root);
+        PrintLevelOrder(root);
+        System.out.println("Height of the tree :"+height(root));
+        System.out.println("smallest Value on tree :"+findSmallestValue(root));
+        System.out.println("Highest Value on tree :"+findHighestValue(root));
+        System.out.println("Number of nodes on tree :"+nodeCount(root));
 
-        System.out.println(bt.containsNode(199));
-        System.out.println(bt.containsNode(8));
+        System.out.println("Is 199 contain in tree : "+bt.containsNode(199));
+        System.out.println("is 8 contain in tree : "+bt.containsNode(8));
         delete(99);
         print2D(root);
-        System.out.println("inorder travel");
+        System.out.println("Height of the tree :"+height(root));
+        System.out.print("inorder travel : ");
         inorder(root);
-        System.out.println("preorder travel");
+        System.out.println();
+        System.out.print("preorder travel : ");
         preorder(root);
-        System.out.println("postrder travel");
+        System.out.println();
+        System.out.print("postrder travel : ");
         postorder(root);
         
    }

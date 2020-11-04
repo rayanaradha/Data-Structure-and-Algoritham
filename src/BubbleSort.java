@@ -33,6 +33,6 @@ public class BubbleSort {
        }
        
        bubbleSort(ar);
-       
+       x.close();
     }
 }
