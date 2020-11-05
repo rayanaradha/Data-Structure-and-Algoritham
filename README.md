@@ -9,6 +9,9 @@ Welcome to the Data Structures and Algorithms . Here is a java implementation of
 ###### Bubble Sort
 ###### Merge Sort
 
+#### Sorting Algorithams
+###### Binary Search
+
 ### Data Structures
-###### Binary Tree
+
 ###### Binary Search Tree
