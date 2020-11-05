@@ -11,3 +11,4 @@ Welcome to the Data Structures and Algorithms . Here is a java implementation of
 
 ### Data Structures
 ###### Binary Tree
+###### Binary Search Tree
