@@ -9,6 +9,7 @@ Welcome to the Data Structures and Algorithms . Here is a java implementation of
 ###### Heap Sort
 ###### Insertion Sort
 ###### Merge Sort
+###### Quick Sort
 ###### Selection Sort
 
 #### Searching Algorithams
