@@ -6,6 +6,7 @@ Welcome to the Data Structures and Algorithms . Here is a java implementation of
 
 #### Sorting Algorithams
 ###### Bubble Sort
+###### Counting Sort
 ###### Heap Sort
 ###### Insertion Sort
 ###### Merge Sort
