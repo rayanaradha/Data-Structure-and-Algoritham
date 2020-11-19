@@ -1,12 +1,13 @@
 ## Data Structures and Algorithms
 
-Welcome to the Data Structures and Algorithms . Here is a java implementation of well known algorithms and Data Structure.
+Welcome to the Data Structures and Algorithms . Here is a java implementation of well known algorithms and Data Structures.
 
 ### Algorithms
 
 
 #### Dynamic Programming
 ###### Fibonacci Number
+###### Rod cutting
 
 #### Sorting Algorithams
 ###### Bubble Sort
