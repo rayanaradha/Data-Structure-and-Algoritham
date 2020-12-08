@@ -8,6 +8,7 @@ Welcome to the Data Structures and Algorithms . Here is a java implementation of
 #### Dynamic Programming
 ###### Fibonacci Number
 ###### Rod cutting
+###### 2D Grid Travel
 
 #### Sorting Algorithams
 ###### Bubble Sort
